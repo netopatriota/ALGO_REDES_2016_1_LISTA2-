@@ -1,0 +1,33 @@
+//Desenvolver o sistema da questão anterior (questão 3) utilizando português estruturado (Portugol).
+
+algoritmo "MEDIA ALUNO - APROVADO, REPROVADO E PROVA FINAL"
+var
+NOTA1, NOTA2, NOTA3, MEDIA : REAL
+ 
+ 
+inicio
+// Seção de Comandos
+ ESCREVA("DIGITE A PRIMEIRA NOTA: ")
+ LEIA(NOTA1)
+ ESCREVA("DIGITE A SEGUNDA NOTA: ")
+ LEIA(NOTA2)
+ ESCREVA("DIGITE A TECEIRA NOTA: ")
+ LEIA(NOTA3)
+ MEDIA := (NOTA1 + NOTA2 + NOTA3) / 3 ;
+ 
+ 
+ 
+ SE MEDIA <= 4  ENTAO
+    ESCREVA("A MEDIA DO ALUNO FOI: ", MEDIA)
+    ESCREVAL (" - ALUNO REPROVADO ")
+ FIMSE
+ SE MEDIA <=  6.9 ENTAO
+    ESCREVA("A MEDIA DO ALUNO FOI: ", MEDIA)
+    ESCREVAL (" - ALUNO NA PROVA FINAL ")
+ FIMSE
+ SE MEDIA >= 7 ENTAO
+    ESCREVA("A MEDIA DO ALUNO FOI: ", MEDIA)
+    ESCREVAL (" - ALUNO APROVADO ")
+ FIMSE
+ 
+fimalgoritmo
